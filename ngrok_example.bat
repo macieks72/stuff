@@ -1,0 +1,1 @@
+ngrok http -host-header=rewrite zadanie-host.dev:80

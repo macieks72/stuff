@@ -1,0 +1,1 @@
+c:\toolswin\winscp\winscp.exe /keepuptodate  // "d:\www_debian9" /var/www

@@ -1,0 +1,40 @@
+[user]
+	name = Maciej Szymanski
+	email = aaa@aaa.com
+[core]
+editor = 'c:\\windows\\notepad.exe'
+
+[alias]	
+	st = status
+    ci = commit -a
+    br = branch
+	brc = checkout -b
+	brd = branch -D	
+    co = checkout	
+    df = diff
+    lg = log --decorate 
+    lgs = shortlog 
+	ad = add -A
+	rsthead = reset --hard HEAD
+[log]
+	date = iso
+
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+	interactive = auto
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+
+
+[gui]
+	encoding = utf-8
+
