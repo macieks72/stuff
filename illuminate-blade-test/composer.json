@@ -1,0 +1,17 @@
+{
+    "name": "macieks72/laravel-blade-test",
+    "require": {
+        "illuminate/view": "^5.4"
+    },
+    "authors": [
+        {
+            "name": "Maciej Szymanski",
+            "email": "macieks72@gmail.com"
+        }
+    ],
+	 "autoload": {
+	    "psr-4": {
+	        "MyClasses\\": "src/"
+	    }
+    }
+}
