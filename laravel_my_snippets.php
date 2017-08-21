@@ -1,5 +1,6 @@
 <?php
 
+////////////////////////////////////////////////////
 use Illuminate\Support\Facades\DB;
 
 DB::table('testcron')->insert([
@@ -16,7 +17,15 @@ $user = DB::table('users')->where('username', $username)->where('password', md5(
 $rows = app('db')->select('SELECT * FROM peoples');
 $rows = DB::select('SELECT * FROM peoples');
 
+// bindowanie parametrow
+DB::select('SELECT * FROM peoples WHERE id=:id AND firstname=:firstname', [':id' => 21, ':firstname'=>'Oliwier']);
+//albo to samo inaczej
+app('db')->select('SELECT * FROM peoples WHERE id=:id AND firstname=:firstname', [':id' => 21, ':firstname'=>'Oliwier']);
+
+
+//////////////////////////////////////////////////////
 session()->get('currentUser', null);
 session()->put('currentUser', $user);
 session()->flush();
+//////////////////////////////////////////////////////
 
