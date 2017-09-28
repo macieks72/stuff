@@ -1,0 +1,6 @@
+{
+    "require": {
+        "Illuminate/Cache": "^5.5",
+        "illuminate/filesystem": "^5.5"
+    }
+}
